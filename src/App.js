@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import SectionArticle from './componentes/SectionArticle';
+import ContentTotal from './componentes/ContentTotal';
+import { HStack, Wrap } from '@chakra-ui/react';
+import ProductsState from './context/ProductsState';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HStack spacing={{ base: "4", md: "8" }} 
+    wrap="wrap"
+    justify="center" 
+    width="100%"
+    >
+      <ProductsState>
+        <SectionArticle/>
+        <ContentTotal/>
+      </ProductsState>
+    </HStack>
   );
 }
 

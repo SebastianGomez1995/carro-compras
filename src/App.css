@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+.producto{
+  margin: 2% 0% 0% 2% ;
+  padding: 2%;
+  background-color: #b32668;
+  border-radius: 10%;
+  
+}
+.containerTotal p{
+  width: 25%;
+  margin: 0;
+}
+
+.containerArticle{
+  width: 50%;
+}
+.containerTotal{
+  width: 44%;
+  padding: 2%;
+  margin: 2% 2% 2% 0%;
+  background-color: aliceblue;
+  border-radius: 2%;
+}
+.producto p{
+  margin: 0;
+  color: azure;
+  align-self: start;
+}
+
+
+@media (max-width: 720px){
+  .containerArticle{width: 100%;}
+  .containerTotal{width: 80%;}
+}
